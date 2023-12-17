@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATTY LINDA</title>
+    <style>
+      body {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #000033 0%, #0000cc 50%, #ffffff 100%);
+        }
+
+        .container {
+            width: 80%; /* Ajuste a largura total da página para 80% */
+            margin: 0 auto; /* Centralize a página na tela */
+        }
+
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+
+        .slider {
+            display: flex;
+            box-sizing: border-box;
+            width: 100%;
+            transition: transform 0.5s ease;
+            align-items: center;
+        }
+
+        .slider img {
+            flex: 0 0 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .slider-button {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            font-size: 24px;
+            color: #fff;
+            background: none;
+            border: none;
+            outline: none;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 2;
+        }
+
+        .divider {
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+            margin-right: 0;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 500px; /* Ajuste a altura desejada para os vídeos em telas maiores */
+        }
+
+        .content-container,
+        .contact-container {
+            width: 50%;
+            box-sizing: border-box;
+            float: left;
+            padding: 20px;
+        }
+
+        .content-container img,
+        .contact-container img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .slider-nav {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .slider-nav button {
+            margin-bottom: 10px;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .content-container,
+            .contact-container {
+                width: 100%; /* Ajuste a largura para 100% em dispositivos móveis */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Eu e você quando???</h1>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="https://th.bing.com/th/id/OIG._MaDb9ciMIEPHzVFkFii?pid=ImgGn" alt="Imagem 1">
+                <img src="https://th.bing.com/th/id/OIG.m2OWJE3K6praB9MyJ.2.?pid=ImgGn" alt="Imagem 2">
+                <img src="https://th.bing.com/th/id/OIG.WmmpJkV6PLJOq2w3XBSk?pid=ImgGn" alt="Imagem 3">
+                <img src="https://th.bing.com/th/id/OIG.Ahw6hKz6VDOdp9Aus95B?pid=ImgGn" alt="Imagem 4">
+            </div>
+        </div>
+        <button class="slider-button prev" onclick="prevSlide()">❮</button>
+        <button class="slider-button next" onclick="nextSlide()">❯</button>
+
+        <div class="divider"></div>
+
+        <div class="video-container">
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/Cl6e47xqEb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="content-container">
+            <h2>Se você é linda?</h2>
+            <p>
+                Garota, você é mais linda que esse gol do CR7. Seus olhos brilham mais que o holofote do estádio, e eu te aplaudiria de pé assim como a torcida da Juventus fez.
+            </p>
+        </div>
+        <div class="video-container">
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Oomhnb3aJZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="content-container">
+            <h2>La Decima</h2>
+            <p>
+                La Decima foi linda com o milagre dos 93, mas... a deixa a La Decima foi perfeita mesmo kkkkk.
+            </p>
+        </div>
+
+        <div class="video-container">
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/tsA0P1LzoHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>O Gol Perfeito</h2>
+            <p>
+                Bem, dizem que esse gol é o gol perfeito né? Que idiotas citarem perfeição sem nem antes ter visto teu sorriso antes.
+            </p>
+        </div>
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/6a1V_-a252c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2>Karius</h2>
+        <p>
+            Karius...falhou, falhou feio, mas o que definitavamente não falharia seria nós dois juntos
+        </p>
+        
+    </div>
+        <div class="contact-container">
+            <h2>Entre em Contato</h2>
+            <!-- Adicione aqui seus links de contato e imagens -->
+            <a href="https://www.instagram.com/math.sant.ana/" target="_blank">
+                <img src="https://pixel.cuboup.com/wp-content/uploads/edd/2021/03/Instagram-Logo-Contornado-Preto-Icone.jpg" alt="Instagram Link">
+            </a>
+            
+            <!-- Add other contact information or links here -->
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slider img');
+            currentSlide = (n + slides.length) % slides.length;
+
+            // Define a posição do scroll para mostrar o slide atual
+            document.querySelector('.slider').style.transform = `translateX(${-currentSlide * slides[0].clientWidth}px)`;
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        // Adiciona eventos de teclado para mudar as imagens com as setas esquerda e direita
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                prevSlide();
+            } else if (e.key === 'ArrowRight') {
+                nextSlide();
+            }
+        });
+
+        // Remova a função para rolar a página para cima ou para baixo
+        // function scrollPage(direction) {
+        //     const scrollAmount = 300;
+        //     if (direction === 'up') {
+        //         window.scrollBy(0, -scrollAmount);
+        //     } else if (direction === 'down') {
+        //         window.scrollBy(0, scrollAmount);
+        //     }
+        // }
+    </script>
+</body>
+</html>
